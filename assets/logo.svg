@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 124" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- מגן -->
+  <path d="M10 8 H90 V86 L50 116 L10 86 Z"/>
+  <!-- גזע -->
+  <path d="M50 20 V112"/>
+  <!-- ענפים (שברונים) -->
+  <path d="M50 24 L36 38 M50 24 L64 38"/>
+  <path d="M50 40 L30 56 M50 40 L70 56"/>
+  <path d="M50 56 L24 74 M50 56 L76 74"/>
+  <path d="M50 72 L18 92 M50 72 L82 92"/>
+  <!-- בסיס -->
+  <path d="M50 92 L12 84 M50 92 L88 84"/>
+</svg>

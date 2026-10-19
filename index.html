@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">GLOSKA — אורן גלוסקא | מומחה סייבר ופרטיות מידע</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="אורן גלוסקא — מומחה אבטחת מידע וסייבר עם 25+ שנות ניסיון: בדיקות חדירות, DLP, ארכיטקטורת הגנה, התאמה לתיקון 13 ושילוב מאובטח של AI בארגון.">
+  <meta property="og:title" content="GLOSKA — Oren Gloska | Cyber Security & Data Privacy Expert">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f101c">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700;900&family=Heebo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- סמל הלוגו (מוגדר פעם אחת, בשימוש חוזר בכל העמוד) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 100 124" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M10 8 H90 V86 L50 116 L10 86 Z"/>
+    <path d="M50 20 V112"/>
+    <path d="M50 24 L36 38 M50 24 L64 38"/>
+    <path d="M50 40 L30 56 M50 40 L70 56"/>
+    <path d="M50 56 L24 74 M50 56 L76 74"/>
+    <path d="M50 72 L18 92 M50 72 L82 92"/>
+    <path d="M50 92 L12 84 M50 92 L88 84"/>
+  </symbol>
+</svg>
+
+<div class="atmosphere" aria-hidden="true"></div>
+
+<!-- ===== ניווט ===== -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top" aria-label="GLOSKA">
+      <span class="brand__mark"><svg aria-hidden="true"><use href="#logo"/></svg></span>
+      <span>
+        <span class="brand__name">GLOSKA</span>
+        <span class="brand__sub">OG · SINCE 1977</span>
+      </span>
+    </a>
+    <nav aria-label="ניווט ראשי">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#expertise" data-i18n="nav.expertise">התמחויות</a></li>
+        <li><a href="#method" data-i18n="nav.method">איך אני עובד</a></li>
+        <li><a href="#about" data-i18n="nav.about">אודות</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">צור קשר</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="תפריט" aria-expanded="false" aria-controls="navLinks">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow mono" data-i18n="hero.eyebrow">אורן גלוסקא · מומחה סייבר ופרטיות מידע</p>
+        <h1 data-i18n-html="hero.title">מגן על הנכסים הדיגיטליים של הארגון שלך — <em>מפני איומים פנימיים וחיצוניים.</em></h1>
+        <p class="hero__lead" data-i18n="hero.lead">25+ שנות ניסיון מעשי באבטחת מידע: בדיקות חדירות, ארכיטקטורת הגנה, מניעת זליגת מידע (DLP), התאמה לתיקון 13 לחוק הגנת הפרטיות ושילוב מאובטח של סוכני AI בסביבה הארגונית.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">
+            <span data-i18n="hero.cta1">ליצירת קשר מהיר</span>
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#expertise" data-i18n="hero.cta2">לתחומי ההתמחות</a>
+        </div>
+        <div class="hero__tags">
+          <span data-i18n="hero.tag1">Penetration Testing</span>
+          <span data-i18n="hero.tag2">Data Privacy · תיקון 13</span>
+          <span data-i18n="hero.tag3">DLP</span>
+          <span data-i18n="hero.tag4">Secure AI Integration</span>
+          <span data-i18n="hero.tag5">Microsoft 365 · Intune</span>
+        </div>
+      </div>
+
+      <div class="portrait" aria-label="פורטרט">
+        <span class="portrait__corner tl" aria-hidden="true"></span>
+        <span class="portrait__corner tr" aria-hidden="true"></span>
+        <span class="portrait__corner bl" aria-hidden="true"></span>
+        <span class="portrait__corner br" aria-hidden="true"></span>
+        <div class="portrait__frame">
+          <!-- כדי להציג תמונה אמיתית: שימו קובץ ב-assets/portrait.jpg והסירו את data-missing -->
+          <img src="assets/portrait.jpg" alt="אורן גלוסקא" id="portraitImg" data-missing hidden>
+          <div class="portrait__placeholder" id="portraitPlaceholder">
+            <div class="logo-lockup">
+              <svg aria-hidden="true"><use href="#logo"/></svg>
+              <span class="og">OG</span>
+              <span class="since">SINCE 1977</span>
+            </div>
+            <span class="mono" data-i18n="hero.portraitNote">[ מקום לתמונת פורטרט ]</span>
+          </div>
+          <span class="portrait__scan" aria-hidden="true"></span>
+        </div>
+        <div class="portrait__badge">
+          <span class="dot" aria-hidden="true"></span>
+          <span>
+            <strong data-i18n="hero.badgeTitle">זמין לפרויקטים וייעוץ</strong>
+            <small data-i18n="hero.badgeSub">PT · Privacy · AI Security</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== פס נתונים ===== -->
+  <section class="stats" aria-label="נתונים">
+    <div class="container stats__grid">
+      <div class="stat"><div class="stat__num">25+</div><div class="stat__label" data-i18n="stats.1">שנות ניסיון מעשי</div></div>
+      <div class="stat"><div class="stat__num">4</div><div class="stat__label" data-i18n="stats.2">סוגי בדיקות חדירות: חיצוני, פנימי, קוד ו-AI</div></div>
+      <div class="stat"><div class="stat__num">13</div><div class="stat__label" data-i18n="stats.3">תיקון 13 — ליווי להתאמה רגולטורית מלאה</div></div>
+      <div class="stat"><div class="stat__num">AI</div><div class="stat__label" data-i18n="stats.4">שילוב מאובטח של סוכני AI בארגון</div></div>
+    </div>
+  </section>
+
+  <!-- ===== תחומי התמחות ===== -->
+  <section class="section" id="expertise">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="mono" style="color:var(--accent)" data-i18n="expertise.kicker">01 — Core Expertise</span>
+        <h2 data-i18n="expertise.title">תחומי עיסוק והתמחויות</h2>
+        <p data-i18n="expertise.lead">הגנה מקצה לקצה: מגילוי החשיפות, דרך תכנון הארכיטקטורה, ועד הטמעה ותפעול שוטף של מערכות ההגנה.</p>
+      </div>
+
+      <div class="cards">
+        <!-- כרטיס 1: בדיקות חדירות -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/></svg></span>
+            <span class="card__num mono">01</span>
+          </div>
+          <h3 data-i18n="cards.pt.title">בדיקות חדירות (Penetration Testing)</h3>
+          <p data-i18n="cards.pt.text">סימולציה מבוקרת של תקיפות סייבר על מערכות הארגון, אפליקציות, קוד ותשתיות רשת — וגם על מערכות מבוססות AI — במטרה לאתר פרצות אבטחה לפני שהתוקפים ינצלו אותן.</p>
+          <div class="card__tags"><span data-i18n="cards.pt.t1">חיצוני</span><span data-i18n="cards.pt.t2">פנימי</span><span data-i18n="cards.pt.t3">קוד</span><span data-i18n="cards.pt.t4">AI</span></div>
+        </article>
+
+        <!-- כרטיס 2: DLP -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg></span>
+            <span class="card__num mono">02</span>
+          </div>
+          <h3 data-i18n="cards.dlp.title">מניעת זליגת מידע (DLP)</h3>
+          <p data-i18n="cards.dlp.text">תכנון, יישום וניהול מערכות DLP להגנה על המידע הרגיש של החברה — קניין רוחני, מידע פיננסי ופרטי לקוחות — ומניעת דליפה מכוונת או בשוגג אל מחוץ לארגון.</p>
+          <div class="card__tags"><span>Microsoft Purview</span><span data-i18n="cards.dlp.t2">מדיניות</span><span data-i18n="cards.dlp.t3">סיווג מידע</span></div>
+        </article>
+
+        <!-- כרטיס 3: ארכיטקטורה -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="12" cy="13" r="2"/><path d="M12 7v4M10.5 14.5 6.5 17.5M13.5 14.5l4 3"/></svg></span>
+            <span class="card__num mono">03</span>
+          </div>
+          <h3 data-i18n="cards.arch.title">ארכיטקטורת אבטחת מידע וסייבר</h3>
+          <p data-i18n="cards.arch.text">בניית אסטרטגיית הגנה מקיפה לארגון: ניתוח סיכונים, הגדרת מדיניות אבטחה חכמה, תשתיות Firewall, VPN וסגמנטציה, והתאמה לתקני רגולציה מחמירים.</p>
+          <div class="card__tags"><span>Firewall</span><span>VPN</span><span data-i18n="cards.arch.t3">סגמנטציה</span></div>
+        </article>
+
+        <!-- כרטיס 4: פרטיות ותיקון 13 -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <span class="card__num mono">04</span>
+          </div>
+          <h3 data-i18n="cards.privacy.title">פרטיות מידע ותיקון 13</h3>
+          <p data-i18n="cards.privacy.text">ליווי ארגונים להתאמה לחוק הגנת הפרטיות ולתיקון 13: סקרי פערים, מיפוי מאגרי מידע וזרימות נתונים, כתיבת נהלי אבטחה והטמעתם בשטח.</p>
+          <div class="card__tags"><span data-i18n="cards.privacy.t1">סקר פערים</span><span data-i18n="cards.privacy.t2">מיפוי מאגרים</span><span data-i18n="cards.privacy.t3">נהלים</span></div>
+        </article>
+
+        <!-- כרטיס 5: AI -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6M2 12h3M19 12h3"/></svg></span>
+            <span class="card__num mono">05</span>
+          </div>
+          <h3 data-i18n="cards.ai.title">שילוב מאובטח של סוכני AI</h3>
+          <p data-i18n="cards.ai.text">פריסה מאובטחת של מערכות וסוכני AI בסביבה הארגונית — בקרות גישה, סינון ובידוד נתונים — כך שמידע רגיש לא יזלוג דרך המודל או דרך הכלים המחוברים אליו.</p>
+          <div class="card__tags"><span>LLM Security</span><span data-i18n="cards.ai.t2">בדיקות חדירות ל-AI</span><span>Data Guardrails</span></div>
+        </article>
+
+        <!-- כרטיס 6: M365 -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 10l2 2 4-4"/></svg></span>
+            <span class="card__num mono">06</span>
+          </div>
+          <h3 data-i18n="cards.m365.title">הקשחת Microsoft 365 ו-Intune</h3>
+          <p data-i18n="cards.m365.text">הקשחה וניהול מאובטח של סביבות Microsoft 365: זהויות וגישה מותנית, ניהול מכשירי קצה ב-Intune, מדיניות הגנה על מידע ובקרה שוטפת.</p>
+          <div class="card__tags"><span>Entra ID</span><span>Intune</span><span>Conditional Access</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== מתודולוגיה ===== -->
+  <section class="section" id="method" style="background:rgba(21,23,39,.45);border-block:1px solid var(--line)">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="mono" style="color:var(--accent)" data-i18n="method.kicker">02 — How I Work</span>
+        <h2 data-i18n="method.title">מתודולוגיית עבודה</h2>
+        <p data-i18n="method.lead">תהליך מובנה בארבעה שלבים — שקוף להנהלה, מדיד, ובלי להפריע לפעילות העסקית השוטפת.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__num">01</div>
+          <h3 data-i18n="method.s1.title">מיפוי ואיסוף מודיעין</h3>
+          <p data-i18n="method.s1.text">הבנת הנכסים, המשטחים החשופים והאיומים הרלוונטיים לארגון — מבחוץ ומבפנים.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">02</div>
+          <h3 data-i18n="method.s2.title">בדיקות חדירות אקטיביות</h3>
+          <p data-i18n="method.s2.text">תקיפה מבוקרת של תשתיות, אפליקציות, קוד ומערכות AI, ותיעוד מדויק של כל ממצא.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">03</div>
+          <h3 data-i18n="method.s3.title">הגדרת חוקי DLP ומניעה</h3>
+          <p data-i18n="method.s3.text">סגירת הפערים: מדיניות DLP, הקשחת M365 ו-Intune, בקרות גישה ונהלי אבטחה מותאמים.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">04</div>
+          <h3 data-i18n="method.s4.title">דוח המלצות למנהלים</h3>
+          <p data-i18n="method.s4.text">דוח ברור ומדורג לפי סיכון, עם תוכנית עבודה פרקטית ותמיכה בהטמעה.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== אודות ===== -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__text reveal">
+        <div class="section__head" style="margin-bottom:28px">
+          <span class="mono" style="color:var(--accent)" data-i18n="about.kicker">03 — About</span>
+          <h2 data-i18n="about.title">אודות</h2>
+        </div>
+        <p data-i18n-html="about.p1"><strong>מומחה אבטחת מידע וסייבר עם למעלה מ-25 שנות ניסיון מעשי</strong>, המתמחה בפרטיות מידע, הטמעת מערכות אבטחה ושילוב מאובטח של סוכני AI בסביבות ארגוניות.</p>
+        <p data-i18n="about.p2">לאורך הקריירה סייעתי לארגונים לבנות הגנה מקצה לקצה — מבדיקות חדירות וגילוי חשיפות, דרך תכנון ארכיטקטורת אבטחה, ועד הטמעה ותפעול שוטף של מערכות ההגנה. אני משלב מומחיות עמוקה בתשתיות (Firewall, VPN, סגמנטציה, Microsoft 365 ו-Intune) עם התמחות במניעת זליגת מידע (DLP).</p>
+        <p data-i18n="about.p3">בשנים האחרונות אני מתמקד בשני מסלולים משלימים: פרטיות ורגולציה — ליווי ארגונים להתאמה לחוק הגנת הפרטיות ולתיקון 13, כולל סקרי פערים, מיפוי מידע ונהלי אבטחה; ושילוב AI — פריסה מאובטחת של מערכות מבוססות AI, תוך הבטחה שמידע רגיש לא יזלוג דרך המודל.</p>
+        <blockquote class="quote" data-i18n="about.quote">אבטחה טובה היא לא "עוד קופסה" — אלא גישה מבוססת סיכון: להבין את הנכס, את האיום, ואיפה ההגנה מביאה את הערך הגבוה ביותר. המטרה שלי בכל פרויקט: לאפשר לארגון לפעול בביטחון, בהתאם לרגולציה, ובלי להפריע לעסק.</blockquote>
+      </div>
+
+      <aside class="aside reveal">
+        <div class="panel">
+          <h3><span class="mono">//</span> <span data-i18n="about.certTitle">הסמכות</span></h3>
+          <ul>
+            <li><span class="placeholder" data-i18n="about.cert1">[ הסמכה 1 — למשל CISSP ]</span></li>
+            <li><span class="placeholder" data-i18n="about.cert2">[ הסמכה 2 — למשל CEH ]</span></li>
+            <li><span class="placeholder" data-i18n="about.cert3">[ הסמכה 3 — להשלמה ]</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3><span class="mono">//</span> <span data-i18n="about.toolsTitle">כלים וטכנולוגיות</span></h3>
+          <div class="chips">
+            <span>Microsoft 365</span><span>Intune</span><span>Entra ID</span><span>Microsoft Purview (DLP)</span>
+            <span>Firewall / VPN</span><span data-i18n="about.toolSeg">סגמנטציית רשת</span><span>Burp Suite</span><span>Nmap</span><span>Kali Linux</span><span>LLM / AI Agents</span>
+          </div>
+        </div>
+        <div class="panel">
+          <h3><span class="mono">//</span> <span data-i18n="about.focusTitle">מיקוד נוכחי</span></h3>
+          <ul>
+            <li data-i18n="about.focus1">התאמה לתיקון 13 לחוק הגנת הפרטיות</li>
+            <li data-i18n="about.focus2">אבטחת שילוב AI וסוכנים בארגון</li>
+            <li data-i18n="about.focus3">בדיקות חדירות למערכות AI</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== יצירת קשר ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__grid">
+      <div class="reveal">
+        <span class="mono" style="color:var(--accent)" data-i18n="contact.kicker">04 — Contact</span>
+        <h2 data-i18n-html="contact.title" style="margin-top:14px">בואו נדבר על <em>ההגנה של הארגון שלכם.</em></h2>
+        <p class="contact__lead" data-i18n="contact.lead">מוזמנים לפנות לשיתופי פעולה, ייעוץ או הכוונה בתחומי סייבר, פרטיות מידע ויישום AI.</p>
+      </div>
+      <div class="contact__list reveal">
+        <a class="contact__item" href="mailto:service@unisphere-tech.com">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><small data-i18n="contact.email">אימייל</small><strong>service@unisphere-tech.com</strong></span>
+        </a>
+        <a class="contact__item" href="https://wa.me/972552550030" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.2-4.6A9 9 0 1 1 21 12z"/><path d="M9 10a4 4 0 0 0 5 5l1-1-2-1-1 1a3 3 0 0 1-2-2l1-1-1-2z"/></svg></span>
+          <span><small data-i18n="contact.whatsapp">וואטסאפ עסקי</small><strong>055-255-0030</strong></span>
+        </a>
+        <a class="contact__item" href="#" data-placeholder-link>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.5M12 17v-4a2 2 0 0 1 4 0v4M12 11v6"/></svg></span>
+          <span><small>LinkedIn</small><strong class="placeholder" data-i18n="contact.linkedin">[ קישור לפרופיל LinkedIn ]</strong></span>
+        </a>
+        <div class="contact__item" style="cursor:default">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <span><small data-i18n="contact.company">חברה</small><strong style="direction:inherit" data-i18n="contact.companyName">Unisphere Technologies Ltd. · קריית אונו</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="brand" style="gap:10px">
+      <span class="brand__mark" style="width:26px;height:32px"><svg aria-hidden="true"><use href="#logo"/></svg></span>
+      <span class="brand__name" style="font-size:.85rem">GLOSKA</span>
+    </div>
+    <span data-i18n="footer.text">© 2026 אורן גלוסקא · Cyber Security &amp; Data Privacy</span>
+    <span class="mono">OG · SINCE 1977</span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
