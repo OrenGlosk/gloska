@@ -90,9 +90,7 @@ window.GLOSKA_I18N = {
     "contact.title": "בואו נדבר על <em>ההגנה של הארגון שלכם.</em>",
     "contact.lead": "מוזמנים לפנות לשיתופי פעולה, ייעוץ או הכוונה בתחומי סייבר, פרטיות מידע ויישום AI.",
     "contact.email": "אימייל",
-    "contact.whatsapp": "וואטסאפ עסקי",
-    "contact.company": "חברה",
-    "contact.companyName": "Unisphere Technologies Ltd. · קריית אונו",
+    "contact.phone": "טלפון",
 
     "footer.text": "© {year} אורן גלוסקא · Cyber Security & Data Privacy"
   },
@@ -184,9 +182,7 @@ window.GLOSKA_I18N = {
     "contact.title": "Let's talk about <em>protecting your organization.</em>",
     "contact.lead": "Feel free to reach out for collaborations, consulting, or guidance in cyber security, data privacy and AI implementation.",
     "contact.email": "Email",
-    "contact.whatsapp": "Business WhatsApp",
-    "contact.company": "Company",
-    "contact.companyName": "Unisphere Technologies Ltd. · Kiryat Ono, Israel",
+    "contact.phone": "Phone",
 
     "footer.text": "© {year} Oren Gloska · Cyber Security & Data Privacy"
   }
