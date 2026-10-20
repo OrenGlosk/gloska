@@ -28,14 +28,16 @@ python3 -m http.server 8080
 - אפשר לקשר ישירות לשפה: `index.html?lang=en`.
 - הבחירה נשמרת ב-localStorage.
 
-## מה נשאר להשלים (placeholders מסומנים בצהוב באתר)
+## מה נשאר להשלים
 
 1. **תמונת פורטרט** — לשים קובץ בשם `assets/portrait.jpg` (יחס 4:5 מומלץ). האתר יזהה אותו אוטומטית ויחליף את הלוגו.
-2. **הסמכות** — לעדכן את `about.cert1..3` ב-`js/i18n.js` (בשתי השפות) ואת ה-HTML ב-`index.html`.
-3. **LinkedIn** — להחליף את `href="#"` בכרטיס LinkedIn ב-`index.html` בקישור האמיתי ולעדכן את הטקסט `contact.linkedin`.
-4. **קורות חיים / פרופיל חברה (אופציונלי)** — להוסיף קובץ PDF ל-`assets/` ולקשר אליו כפתור משני ב-Hero.
+2. **קורות חיים / פרופיל חברה (אופציונלי)** — להוסיף קובץ PDF ל-`assets/` ולקשר אליו כפתור משני ב-Hero.
 
-## פריסה ב-GitHub Pages
+## פריסה (Cloudflare Workers)
 
-Settings → Pages → Source: `Deploy from a branch` → Branch: `main` / root.
-לדומיין מותאם (למשל `gloska.co.il`): להוסיף קובץ `CNAME` עם שם הדומיין ולהגדיר רשומות DNS לפי ההנחיות של GitHub.
+האתר מוגש מ-Cloudflare Worker בשם `gloska` (Static Assets), המחובר לריפו הזה:
+כל push ל-`main` מפעיל build ו-deploy אוטומטיים.
+
+- כתובת ייצור: https://gloska.co.il (וגם `www.gloska.co.il`)
+- כתובת Worker: https://gloska.oren-00c.workers.dev
+- הדומיין העברי `גלוסקא.ישראל` מפנה (301) ל-gloska.co.il דרך Redirect Rule ב-Cloudflare.
