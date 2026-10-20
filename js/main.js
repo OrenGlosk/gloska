@@ -118,8 +118,59 @@
     probe.src = img.getAttribute("src");
   }
 
-  /* ---------- קישורים שעדיין לא הוגדרו (placeholder) ---------- */
-  document.querySelectorAll("[data-placeholder-link]").forEach(function (a) {
-    a.addEventListener("click", function (e) { e.preventDefault(); });
+  /* ---------- 5. מונים (אנימציית ספירה בפס הנתונים) ---------- */
+  var counters = document.querySelectorAll("[data-count]");
+  function runCounter(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10);
+    var suffix = el.getAttribute("data-suffix") || "";
+    var start = null, duration = 1200;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 3);              // האטה בסוף
+      el.textContent = Math.round(target * eased) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ("IntersectionObserver" in window && counters.length) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { runCounter(entry.target); cio.unobserve(entry.target); }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { cio.observe(el); });
+  } else {
+    counters.forEach(function (el) { el.textContent = el.getAttribute("data-count") + (el.getAttribute("data-suffix") || ""); });
+  }
+
+  /* ---------- 6. סימון הקישור הפעיל בניווט לפי הגלילה ---------- */
+  var navAnchors = document.querySelectorAll(".nav__pill a[href^='#']");
+  var sections = [];
+  navAnchors.forEach(function (a) {
+    var id = a.getAttribute("href").slice(1);
+    var sec = id === "top" ? document.getElementById("top") : document.getElementById(id);
+    if (sec) sections.push({ a: a, el: sec });
   });
+  function updateActive() {
+    var y = window.scrollY + 120, current = sections[0];
+    sections.forEach(function (s) { if (s.el.offsetTop <= y) current = s; });
+    navAnchors.forEach(function (a) { a.classList.remove("is-active"); });
+    if (current) current.a.classList.add("is-active");
+  }
+  if (sections.length) { window.addEventListener("scroll", updateActive, { passive: true }); updateActive(); }
+
+  /* ---------- 7. טופס יצירת קשר — פותח מייל מוכן לשליחה ---------- */
+  var form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var t = DICT[current] || DICT.he;
+      var first = form.first.value.trim(), last = form.last.value.trim();
+      var email = form.email.value.trim(), msg = form.message.value.trim();
+      if (!first || !email || !msg) { form.reportValidity(); return; }
+      var body = msg + "\n\n— " + first + (last ? " " + last : "") + "\n" + email;
+      location.href = "mailto:oren@gloska.co.il?subject=" + encodeURIComponent(t["form.subject"]) + "&body=" + encodeURIComponent(body);
+    });
+  }
 })();
