@@ -13,14 +13,14 @@
 
   /* ---------- 1. שפה ---------- */
   function detectLang() {
-    // עדיפות: פרמטר ?lang= בכתובת → בחירה שמורה → ברירת מחדל עברית
+    // עדיפות: פרמטר ?lang= בכתובת → בחירה שמורה → ברירת מחדל אנגלית
     var fromUrl = new URLSearchParams(location.search).get("lang");
     if (fromUrl && DICT[fromUrl]) return fromUrl;
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       if (saved && DICT[saved]) return saved;
     } catch (e) { /* אחסון חסום — מתעלמים */ }
-    return "he";
+    return "en";
   }
 
   function applyLang(lang) {
