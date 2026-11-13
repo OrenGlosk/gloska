@@ -160,6 +160,11 @@
   }
   if (sections.length) { window.addEventListener("scroll", updateActive, { passive: true }); updateActive(); }
 
+  /* ---------- 6b. צל עדין לניווט אחרי גלילה ---------- */
+  var navEl = document.getElementById("nav");
+  function updateNavShadow() { if (navEl) navEl.classList.toggle("is-scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", updateNavShadow, { passive: true }); updateNavShadow();
+
   /* ---------- 7. טופס יצירת קשר — פותח מייל מוכן לשליחה ---------- */
   var form = document.getElementById("contactForm");
   if (form) {
@@ -171,6 +176,8 @@
       if (!first || !email || !msg) { form.reportValidity(); return; }
       var body = msg + "\n\n— " + first + (last ? " " + last : "") + "\n" + email;
       location.href = "mailto:oren@gloska.co.il?subject=" + encodeURIComponent(t["form.subject"]) + "&body=" + encodeURIComponent(body);
+      var ok = document.getElementById("formSuccess");           // מצב הצלחה (Peak-end)
+      if (ok) { ok.hidden = false; ok.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
     });
   }
 })();

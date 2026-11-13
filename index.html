@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<!-- סמל הלוגו (מוגדר פעם אחת) -->
+<!-- סמלים משותפים (מוגדרים פעם אחת) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="logo" viewBox="0 0 100 124" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter">
     <path d="M10 8 H90 V86 L50 116 L10 86 Z"/><path d="M50 20 V112"/>
@@ -27,12 +27,26 @@
     <path d="M50 56 L24 74 M50 56 L76 74"/><path d="M50 72 L18 92 M50 72 L82 92"/><path d="M50 92 L12 84 M50 92 L88 84"/>
   </symbol>
   <symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></symbol>
+  <symbol id="i-net" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="12" cy="13" r="2"/><path d="M12 7v4M10.5 14.5 6.5 17.5M13.5 14.5l4 3"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6M2 12h3M19 12h3"/></symbol>
+  <symbol id="i-m365" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 10l2 2 4-4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
 </svg>
 
 <div class="atmosphere" aria-hidden="true"></div>
 
 <!-- ===== ניווט ===== -->
-<header class="nav">
+<header class="nav" id="nav">
   <div class="container nav__inner">
     <a class="brand" href="#top" aria-label="GLOSKA">
       <span class="brand__mark"><svg aria-hidden="true"><use href="#logo"/></svg></span>
@@ -43,12 +57,13 @@
         <li><a href="#top" class="is-active" data-i18n="nav.home">Home</a></li>
         <li><a href="#about" data-i18n="nav.about">About</a></li>
         <li><a href="#services" data-i18n="nav.services">Services</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#why" data-i18n="nav.process">Process</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
     <div class="nav__actions">
-      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">עברית</button>
+      <a class="btn btn--primary nav__cta" href="#contact" data-i18n="nav.cta">Let's talk</a>
       <button class="nav__burger" id="navBurger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -62,43 +77,60 @@
   <section class="hero">
     <div class="container hero__grid">
       <div>
+        <span class="pill"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.pill">Available for new engagements</span></span>
         <p class="hero__hello" data-i18n="hero.hello">Hello, I'm</p>
-        <h1><span data-i18n="hero.name">Oren Gloska</span></h1>
+        <h1 data-i18n="hero.name">Oren Gloska</h1>
         <p class="hero__role" data-i18n="hero.role">Cyber Security &amp; Data Privacy Expert</p>
-        <p class="hero__lead" data-i18n="hero.lead">Protecting your organization's digital assets against internal and external threats: penetration testing, security architecture, data loss prevention (DLP), Amendment 13 compliance and the secure integration of AI agents.</p>
+        <p class="hero__lead" data-i18n="hero.lead">I protect your organization's digital assets against internal and external threats — penetration testing, security architecture, data loss prevention (DLP), Amendment 13 compliance and the secure integration of AI agents.</p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact" data-i18n="hero.cta1">Get started</a>
-          <a class="btn btn--ghost" href="#about" data-i18n="hero.cta2">Learn more</a>
+          <a class="btn btn--primary" href="#contact"><span data-i18n="hero.cta1">Get started</span><svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#services" data-i18n="hero.cta2">See what I do</a>
+        </div>
+        <div class="chips" aria-label="Expertise">
+          <span class="chip"><svg aria-hidden="true"><use href="#i-terminal"/></svg><span data-i18n="chip.pt">Penetration Testing</span></span>
+          <span class="chip"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>DLP</span></span>
+          <span class="chip"><svg aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="chip.privacy">Amendment 13</span></span>
+          <span class="chip"><svg aria-hidden="true"><use href="#i-bot"/></svg><span data-i18n="chip.ai">AI Security</span></span>
         </div>
       </div>
-      <div class="portrait">
-        <div class="portrait__frame">
+
+      <div class="profile">
+        <div class="profile__card">
           <!-- להצגת תמונה אמיתית: assets/portrait.jpg -->
           <img src="assets/portrait.jpg" alt="Oren Gloska" id="portraitImg" hidden>
-          <div class="portrait__placeholder" id="portraitPlaceholder">
-            <div class="logo-lockup">
-              <svg aria-hidden="true"><use href="#logo"/></svg>
-              <span class="og">OG</span><span class="since">SINCE 1977</span>
+          <div id="portraitPlaceholder">
+            <div class="profile__bg" aria-hidden="true"></div>
+            <div class="profile__grid" aria-hidden="true"></div>
+            <div class="profile__center">
+              <div class="logo-lockup"><svg aria-hidden="true"><use href="#logo"/></svg><span class="og">OG</span><span class="since">SINCE 1977</span></div>
+              <span class="profile__note" data-i18n="hero.portraitNote">Portrait photo</span>
             </div>
-            <span class="note" data-i18n="hero.portraitNote">[ PORTRAIT PHOTO PLACEHOLDER ]</span>
           </div>
         </div>
-        <div class="portrait__badge">
-          <span class="dot" aria-hidden="true"></span>
-          <span><strong data-i18n="hero.badgeTitle">Available for projects &amp; consulting</strong><small data-i18n="hero.badgeSub">PT · Privacy · AI Security</small></span>
-        </div>
+        <div class="float float--top"><span class="num">25+</span><span><strong data-i18n="hero.floatTop">years hands-on</strong><small data-i18n="hero.floatTopSub">cyber &amp; infosec</small></span></div>
+        <div class="float float--bottom"><span class="dot" aria-hidden="true"></span><span><strong data-i18n="hero.badgeTitle">Available for projects &amp; consulting</strong><small data-i18n="hero.badgeSub">PT · Privacy · AI Security</small></span></div>
       </div>
     </div>
   </section>
 
   <!-- ===== אודות ===== -->
-  <section class="section" id="about">
+  <section class="section section--tight" id="about">
     <div class="container about">
-      <div class="about__photo reveal">
-        <!-- מקום לתמונה שנייה (אופציונלי) -->
-        <div class="logo-lockup"><svg aria-hidden="true"><use href="#logo"/></svg><span class="og">OG</span><span class="since">SINCE 1977</span></div>
-      </div>
+      <aside class="glance reveal" aria-label="At a glance">
+        <div class="glance__top">
+          <span class="brand__mark"><svg aria-hidden="true"><use href="#logo"/></svg></span>
+          <span><strong data-i18n="hero.name">Oren Gloska</strong><small data-i18n="glance.sub">Cyber security &amp; data privacy consultant</small></span>
+        </div>
+        <ul class="glance__list">
+          <li><span class="k"><svg aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="glance.k1">Experience</span></span><span class="v" data-i18n="glance.v1">25+ years</span></li>
+          <li><span class="k"><svg aria-hidden="true"><use href="#i-briefcase"/></svg><span data-i18n="glance.k2">Engagements</span></span><span class="v" data-i18n="glance.v2">Consulting · PT · Compliance</span></li>
+          <li><span class="k"><svg aria-hidden="true"><use href="#i-shield"/></svg><span data-i18n="glance.k3">Focus</span></span><span class="v" data-i18n="glance.v3">Privacy &amp; AI security</span></li>
+          <li><span class="k"><svg aria-hidden="true"><use href="#i-globe"/></svg><span data-i18n="glance.k4">Languages</span></span><span class="v" data-i18n="glance.v4">Hebrew · English</span></li>
+          <li><span class="k"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="glance.k5">Based in</span></span><span class="v" data-i18n="glance.v5">Israel · remote-friendly</span></li>
+        </ul>
+      </aside>
       <div class="reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">About</span>
         <h2 data-i18n="about.title">Quick intro about myself</h2>
         <p class="about__text" data-i18n="about.p1">Cyber security and information security expert with over 25 years of hands-on experience, specializing in data privacy, security systems implementation, and the secure integration of AI agents into enterprise environments. In recent years I focus on two complementary tracks: Privacy &amp; Regulation — compliance with Israel's Privacy Protection Law and Amendment 13; and AI Integration — the secure deployment of AI-based systems, ensuring sensitive data is not leaked through the model.</p>
         <ul class="checks">
@@ -115,60 +147,70 @@
   <section class="section" id="services">
     <div class="container">
       <div class="section__head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">Services</span>
         <h2 data-i18n="services.title">Areas of Practice &amp; Expertise</h2>
         <p data-i18n="services.lead">End-to-end defense: from exposure discovery, through security architecture design, to the implementation and ongoing operation of protection systems.</p>
       </div>
       <div class="services">
-        <article class="service reveal">
-          <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/></svg></div>
+        <article class="service service--feature reveal">
+          <div class="service__top"><div class="service__icon"><svg aria-hidden="true"><use href="#i-terminal"/></svg></div><span class="service__num">01</span></div>
           <h3 data-i18n="s.pt.title">Penetration Testing</h3>
-          <p data-i18n="s.pt.text">Controlled simulation of cyber attacks on systems, applications, code and infrastructure — including AI systems — to find gaps before attackers exploit them.</p>
+          <p data-i18n="s.pt.text">Controlled simulation of cyber attacks on systems, applications, code and infrastructure — including AI systems — to find gaps before attackers exploit them. Every finding comes with a risk rating and a practical fix.</p>
+          <div class="tags"><span data-i18n="s.pt.t1">External</span><span data-i18n="s.pt.t2">Internal</span><span data-i18n="s.pt.t3">Code</span><span data-i18n="s.pt.t4">AI systems</span></div>
         </article>
         <article class="service reveal">
-          <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg></div>
+          <div class="service__top"><div class="service__icon"><svg aria-hidden="true"><use href="#i-lock"/></svg></div><span class="service__num">02</span></div>
           <h3 data-i18n="s.dlp.title">Data Loss Prevention (DLP)</h3>
-          <p data-i18n="s.dlp.text">Design, implementation and management of DLP systems protecting intellectual property, financial information and customer data — preventing intentional or accidental leakage.</p>
+          <p data-i18n="s.dlp.text">Design, implementation and management of DLP protecting intellectual property, financial information and customer data — preventing intentional or accidental leakage.</p>
         </article>
         <article class="service reveal">
-          <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="12" cy="13" r="2"/><path d="M12 7v4M10.5 14.5 6.5 17.5M13.5 14.5l4 3"/></svg></div>
+          <div class="service__top"><div class="service__icon"><svg aria-hidden="true"><use href="#i-net"/></svg></div><span class="service__num">03</span></div>
           <h3 data-i18n="s.arch.title">Security Architecture</h3>
           <p data-i18n="s.arch.text">A comprehensive defense strategy: risk analysis, smart security policy, Firewall, VPN, segmentation and alignment with regulatory standards.</p>
         </article>
         <article class="service reveal">
-          <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="service__top"><div class="service__icon"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><span class="service__num">04</span></div>
           <h3 data-i18n="s.privacy.title">Data Privacy &amp; Amendment 13</h3>
           <p data-i18n="s.privacy.text">Guidance toward compliance with Israel's Privacy Protection Law and Amendment 13: gap assessments, data-mapping, security procedures and implementation.</p>
         </article>
         <article class="service reveal">
-          <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6M2 12h3M19 12h3"/></svg></div>
+          <div class="service__top"><div class="service__icon"><svg aria-hidden="true"><use href="#i-bot"/></svg></div><span class="service__num">05</span></div>
           <h3 data-i18n="s.ai.title">Secure AI Agent Integration</h3>
           <p data-i18n="s.ai.text">Secure deployment of AI systems and agents — access controls, filtering and data isolation — so sensitive data is never leaked through the model.</p>
         </article>
         <article class="service reveal">
-          <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 10l2 2 4-4"/></svg></div>
+          <div class="service__top"><div class="service__icon"><svg aria-hidden="true"><use href="#i-m365"/></svg></div><span class="service__num">06</span></div>
           <h3 data-i18n="s.m365.title">Microsoft 365 &amp; Intune Hardening</h3>
           <p data-i18n="s.m365.text">Identities and conditional access, endpoint management with Intune, information-protection policies and continuous monitoring.</p>
+        </article>
+        <article class="service service--cta reveal">
+          <div>
+            <h3 data-i18n="s.cta.title">Not sure where to start?</h3>
+            <p data-i18n="s.cta.text">Tell me about your environment and I'll suggest the right first step — a short assessment, a focused penetration test, or a compliance gap review.</p>
+          </div>
+          <a class="btn btn--light" href="#contact"><span data-i18n="s.cta.btn">Book a short call</span><svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ===== נתונים ===== -->
-  <section class="section" style="padding-top:0">
+  <section class="section section--tight">
     <div class="container">
       <div class="stats reveal">
-        <div><div class="stat__num" data-count="25" data-suffix="+">0+</div><div class="stat__label" data-i18n="stats.1">years of hands-on experience</div></div>
-        <div><div class="stat__num" data-count="4">0</div><div class="stat__label" data-i18n="stats.2">penetration-testing tracks: external, internal, code &amp; AI</div></div>
-        <div><div class="stat__num" data-count="13">0</div><div class="stat__label" data-i18n="stats.3">Amendment 13 — full regulatory compliance guidance</div></div>
-        <div><div class="stat__num">AI</div><div class="stat__label" data-i18n="stats.4">secure integration of AI agents into the enterprise</div></div>
+        <div class="stat"><div class="stat__num"><span data-count="25">0</span><span class="sfx">+</span></div><div class="stat__label" data-i18n="stats.1">years of hands-on experience</div></div>
+        <div class="stat"><div class="stat__num"><span data-count="4">0</span></div><div class="stat__label" data-i18n="stats.2">penetration-testing tracks: external, internal, code &amp; AI</div></div>
+        <div class="stat"><div class="stat__num"><span data-count="13">0</span></div><div class="stat__label" data-i18n="stats.3">Amendment 13 — full regulatory compliance guidance</div></div>
+        <div class="stat"><div class="stat__num">AI</div><div class="stat__label" data-i18n="stats.4">secure integration of AI agents into the enterprise</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== למה אני ===== -->
-  <section class="section" id="why" style="padding-top:0">
+  <!-- ===== למה אני + תהליך העבודה ===== -->
+  <section class="section" id="why">
     <div class="container why">
       <div class="reveal">
+        <span class="eyebrow" data-i18n="why.eyebrow">Why me</span>
         <h2 data-i18n="why.title">Why work with me</h2>
         <p class="why__lead" data-i18n="why.lead">Throughout my career I have helped organizations build end-to-end defense — from penetration testing and exposure discovery, through security architecture design, to implementation and ongoing operation. I combine deep infrastructure expertise with specialization in data loss prevention.</p>
         <div class="features">
@@ -178,17 +220,23 @@
           <div class="feature"><h3 data-i18n="why.f4.title">Without disrupting the business</h3><p data-i18n="why.f4.text">The goal in every engagement: let the organization operate with confidence, without stopping day-to-day work.</p></div>
         </div>
       </div>
-      <div class="why__visual reveal" aria-hidden="true">
-        <div class="grid-bg"></div><div class="glow"></div>
-        <div class="lockup"><div class="logo-lockup"><svg><use href="#logo"/></svg><span class="og">OG</span><span class="since">SINCE 1977</span></div></div>
-      </div>
+      <aside class="process reveal">
+        <div class="process__title" data-i18n="process.title">How I work — 4 steps</div>
+        <ol class="steps">
+          <li class="step"><span class="step__num">1</span><div><h3 data-i18n="process.s1.title">Mapping &amp; intelligence gathering</h3><p data-i18n="process.s1.text">Understanding the assets, the exposed surfaces and the threats relevant to the organization — from outside and from within.</p></div></li>
+          <li class="step"><span class="step__num">2</span><div><h3 data-i18n="process.s2.title">Active penetration testing</h3><p data-i18n="process.s2.text">Controlled attacks on infrastructure, applications, code and AI systems, with precise documentation of every finding.</p></div></li>
+          <li class="step"><span class="step__num">3</span><div><h3 data-i18n="process.s3.title">DLP rules &amp; prevention</h3><p data-i18n="process.s3.text">Closing the gaps: DLP policies, M365 and Intune hardening, access controls and tailored security procedures.</p></div></li>
+          <li class="step"><span class="step__num">4</span><div><h3 data-i18n="process.s4.title">Executive recommendations report</h3><p data-i18n="process.s4.text">A clear, risk-ranked report with a practical work plan and support during implementation.</p></div></li>
+        </ol>
+      </aside>
     </div>
   </section>
 
-  <!-- ===== באנר CTA ===== -->
-  <section class="section" style="padding-top:0">
+  <!-- ===== CTA ===== -->
+  <section class="section section--tight">
     <div class="container">
       <div class="cta reveal">
+        <svg class="cta__mark" aria-hidden="true"><use href="#logo"/></svg>
         <div>
           <h2 data-i18n="cta.title">Good security is not "another box" — it is a risk-based approach.</h2>
           <p data-i18n="cta.text">Feel free to reach out for collaborations, consulting, or guidance in cyber security, data privacy and AI implementation.</p>
@@ -198,76 +246,51 @@
     </div>
   </section>
 
-  <!-- ===== פרויקטים (להשלמה) ===== -->
-  <section class="section" id="projects" style="padding-top:0">
+  <!-- ===== פרויקטים / לקוחות / המלצות — מוסתרים עד שיש תוכן (הסירו את hidden) ===== -->
+  <section class="section section--tight" id="projects" hidden>
     <div class="container">
-      <div class="section__head reveal">
-        <h2 data-i18n="projects.title">Projects</h2>
-        <p data-i18n="projects.lead" class="empty"></p>
-      </div>
-      <div class="projects reveal">
-        <!-- כרטיסי פרויקט ריקים — למילוי: כותרת, תיאור, תגיות, תמונה -->
-        <article class="project"><div class="project__media placeholder-box" data-i18n="projects.ph">[ PROJECT IMAGE ]</div><div class="project__body"><h3 class="empty"></h3><p class="empty"></p><div class="tags"></div></div></article>
-        <article class="project"><div class="project__media placeholder-box" data-i18n="projects.ph">[ PROJECT IMAGE ]</div><div class="project__body"><h3 class="empty"></h3><p class="empty"></p><div class="tags"></div></div></article>
-        <article class="project"><div class="project__media placeholder-box" data-i18n="projects.ph">[ PROJECT IMAGE ]</div><div class="project__body"><h3 class="empty"></h3><p class="empty"></p><div class="tags"></div></div></article>
+      <div class="section__head"><span class="eyebrow" data-i18n="projects.title">Projects</span><h2 data-i18n="projects.title">Projects</h2></div>
+      <div class="projects">
+        <article class="project"><div class="project__media placeholder-box">[ image ]</div><div class="project__body"><h3 class="empty"></h3><p class="empty"></p></div></article>
       </div>
     </div>
   </section>
-
-  <!-- ===== לקוחות (להשלמה) ===== -->
-  <section class="section" id="clients" style="padding-top:0">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2 data-i18n="clients.title">Companies I have worked with</h2>
-        <p class="empty"></p>
-      </div>
-      <div class="logos reveal">
-        <div class="placeholder-box" data-i18n="clients.ph">[ LOGO ]</div><div class="placeholder-box" data-i18n="clients.ph">[ LOGO ]</div><div class="placeholder-box" data-i18n="clients.ph">[ LOGO ]</div>
-        <div class="placeholder-box" data-i18n="clients.ph">[ LOGO ]</div><div class="placeholder-box" data-i18n="clients.ph">[ LOGO ]</div><div class="placeholder-box" data-i18n="clients.ph">[ LOGO ]</div>
-      </div>
-    </div>
+  <section class="section section--tight" id="clients" hidden>
+    <div class="container"><div class="section__head"><h2 data-i18n="clients.title">Companies I have worked with</h2></div><div class="logos"><div class="placeholder-box">[ logo ]</div></div></div>
   </section>
-
-  <!-- ===== המלצות (להשלמה) ===== -->
-  <section class="section" id="testimonials" style="padding-top:0">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2 data-i18n="testimonials.title">What clients say</h2>
-        <p class="empty"></p>
-      </div>
-      <div class="testimonials reveal">
-        <article class="testimonial"><p class="testimonial__quote empty"></p><div class="testimonial__who"><span class="testimonial__avatar"></span><span><strong class="empty"></strong><small class="empty"></small></span></div></article>
-        <article class="testimonial"><p class="testimonial__quote empty"></p><div class="testimonial__who"><span class="testimonial__avatar"></span><span><strong class="empty"></strong><small class="empty"></small></span></div></article>
-      </div>
-    </div>
+  <section class="section section--tight" id="testimonials" hidden>
+    <div class="container"><div class="section__head"><h2 data-i18n="testimonials.title">What clients say</h2></div><div class="testimonials"><article class="testimonial"><p class="empty"></p></article></div></div>
   </section>
 
   <!-- ===== יצירת קשר ===== -->
-  <section class="section" id="contact" style="padding-top:0">
+  <section class="section section--tight" id="contact">
     <div class="container contact">
       <div class="reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
         <h2 data-i18n="contact.title">Get in touch</h2>
         <p class="contact__lead" data-i18n="contact.lead">Feel free to reach out for collaborations, consulting, or guidance in cyber security, data privacy and AI implementation.</p>
         <div class="contact__list">
           <a class="contact__item" href="mailto:oren@gloska.co.il">
-            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span class="ico"><svg aria-hidden="true"><use href="#i-mail"/></svg></span>
             <span><small data-i18n="contact.email">Email</small><strong>oren@gloska.co.il</strong></span>
           </a>
           <a class="contact__item" href="tel:+972518318318">
-            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
             <span><small data-i18n="contact.phone">Phone</small><strong>051-831-8318</strong></span>
           </a>
         </div>
+        <p class="contact__reply"><svg aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="contact.reply">I usually reply within one business day.</span></p>
       </div>
       <form class="form reveal" id="contactForm" novalidate>
         <div class="form__row">
           <div class="field"><label for="fFirst" data-i18n="form.first">First name</label><input id="fFirst" name="first" type="text" autocomplete="given-name" required></div>
           <div class="field"><label for="fLast" data-i18n="form.last">Last name</label><input id="fLast" name="last" type="text" autocomplete="family-name"></div>
         </div>
-        <div class="field"><label for="fEmail" data-i18n="form.email">Email address</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="fEmail" data-i18n="form.email">Email address</label><input id="fEmail" name="email" type="email" autocomplete="email" required dir="ltr"></div>
         <div class="field"><label for="fMsg" data-i18n="form.msg">How can I help?</label><textarea id="fMsg" name="message" required></textarea></div>
-        <button class="btn btn--primary" type="submit" data-i18n="form.send">Send now</button>
+        <button class="btn btn--primary" type="submit" data-i18n="form.send">Send message</button>
         <p class="form__note" data-i18n="form.note">The form opens a ready-to-send email to oren@gloska.co.il.</p>
+        <p class="form__success" id="formSuccess" hidden><svg aria-hidden="true"><use href="#check"/></svg><span data-i18n="form.success">Your email app should now be open with the message ready — just hit send.</span></p>
       </form>
     </div>
   </section>
@@ -286,7 +309,7 @@
         <ul>
           <li><a href="#about" data-i18n="nav.about">About</a></li>
           <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#why" data-i18n="nav.process">Process</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
@@ -300,7 +323,7 @@
     </div>
     <div class="footer__bottom">
       <span data-i18n="footer.text">© 2026 Oren Gloska · Cyber Security &amp; Data Privacy</span>
-      <span>OG · SINCE 1977</span>
+      <a class="to-top" href="#top"><svg aria-hidden="true"><use href="#i-up"/></svg><span data-i18n="footer.top">Back to top</span></a>
     </div>
   </div>
 </footer>
